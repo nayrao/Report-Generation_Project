@@ -1,6 +1,8 @@
 package com.example.report.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -9,8 +11,10 @@ import lombok.Data;
 @Entity
 @Data
 public class Plans {
+	@Id
+	@GeneratedValue
 	private Integer planId;
 	private String planName;
-	private String planStatus;
+	
 
 }
