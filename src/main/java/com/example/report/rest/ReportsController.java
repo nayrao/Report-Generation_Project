@@ -28,6 +28,7 @@ import com.example.report.service.ReportService;
 public class ReportsController {
 	@Autowired
 	private ReportService service;
+	
 
 	/*
 	 * @GetMapping("/getPlan") public List<String> getPlaneNames(){ return
@@ -76,6 +77,9 @@ public class ReportsController {
          
         
 	}
-	
+	@GetMapping("/")
+	public String welcome() {
+		return "welcome to Docker and Springboot application";
+	}
 	
 }
